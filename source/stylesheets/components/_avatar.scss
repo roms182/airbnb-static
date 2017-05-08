@@ -3,8 +3,8 @@ img[class*="avatar"]{
 }
 
 .avatar {
-  width: 30px;
-  height: 30px;
+  width: $small-size;
+  height: $small-size;
   border-radius: 50%;
 }
 .avatar-large {
@@ -13,8 +13,8 @@ img[class*="avatar"]{
   border-radius: 50%;
 }
 .avatar-xlarge{
-  width: 100px;
-  height: 100px;
+  width: $big-size;
+  height: $big-size;
   border-radius: 50%;
 }
 .avatar-bordered {
