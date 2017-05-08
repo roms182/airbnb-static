@@ -7,7 +7,7 @@ title: Le Wagon Middleman boilerplate
       <div class="banner-content">
         <h1>WELCOME HOME</h1>
         <p>Find the perfect place to experiment unforgetable moments!</p>
-        <a class="btn btn-primary btn-lg">Start here</a>
+        <% link_to "Start here", "index.html", class: "btn btn-primary btn-lg" %>
       </div>
     </div>
 
@@ -16,22 +16,22 @@ title: Le Wagon Middleman boilerplate
     <div class="container text-center padded features">
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-          <img class="img-responsive center-block" src="images/globe.png" alt="image de globe terrestre"/>
+          <%= image_tag "globe.png", alt: "image de globe", class: "img-responsive center-block" %>
           <h2>Discover the world</h2>
           <p>The earth is your new home.</p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-          <img class="img-responsive center-block" src="images/dollar.png" alt="image de dollar"/>
+          <%= image_tag "dollar.png", alt: "image de dollar", class: "img-responsive center-block" %>
           <h2>Pay online</h2>
           <p>No cash issues anymore.</p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-          <img class="img-responsive center-block" src="images/beer.png" alt="image de verre de bière"/>
+          <%= image_tag "beer.png", alt: "image de verre de bière", class: "img-responsive center-block" %>
           <h2>Meet people</h2>
           <p>Discover new culture and lifestyle.</p>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-          <img class="img-responsive center-block" src="images/heart.png" alt="image de coeur"/>
+          <%= image_tag "heart.png", alt: "image de coeur", class: "img-responsive center-block" %>
           <h2>Share and love</h2>
           <p>Join a community you will love.</p>
         </div>
@@ -48,7 +48,7 @@ title: Le Wagon Middleman boilerplate
           <div class="col-xs-12 col-sm-4">
             <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/doel.jpg')">
               <p class="card-title">Belgique</p>
-              <img class="avatar card-avatar" src="images/francois.jpg" alt="avatar de Claudy"/>
+              <%= image_tag "francois.jpg", alt: "avatar de claudy", class: "avatar card-avatar" %>
               <div class="card-description">
                 <p >Claudy Focan's Home</p>
                 <p>Charming room with nice guy</p>
@@ -59,7 +59,7 @@ title: Le Wagon Middleman boilerplate
           <div class="col-xs-12 col-sm-4">
             <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/arrive.png')">
               <p class="card-title">Belgique</p>
-              <img class="avatar card-avatar" src="images/benoit.jpg" alt="avatar de Benoit"/>
+              <%= image_tag "benoit.jpg", alt: "avatar de Benoît", class: "avatar card-avatar" %>
               <div class="card-description">
                 <p >Benoît's Home</p>
                 <p>Charming street to rest (in peace)</p>
@@ -70,7 +70,7 @@ title: Le Wagon Middleman boilerplate
           <div class="col-xs-12 col-sm-4">
             <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/cabane.jpg')">
               <p class="card-title">Middle of Nowhere</p>
-              <img class="avatar card-avatar" src="images/pierre.jpg" alt="avatar de Pierre"/>
+              <%= image_tag "pierre.jpg", alt: "avatar de Pierre", class: "avatar card-avatar" %>
               <div class="card-description">
                 <p >Pierre's Home</p>
                 <p>Charming wooden house</p>
