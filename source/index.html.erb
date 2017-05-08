@@ -45,38 +45,19 @@ title: Le Wagon Middleman boilerplate
       <div class="container cards">
         <div class="row">
 
-          <div class="col-xs-12 col-sm-4">
-            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/doel.jpg')">
-              <p class="card-title">Belgique</p>
-              <%= image_tag "francois.jpg", alt: "avatar de claudy", class: "avatar card-avatar" %>
-              <div class="card-description">
-                <p >Claudy Focan's Home</p>
-                <p>Charming room with nice guy</p>
+          <% data.products.each do |owner, info| %>
+            <div class="col-xs-12 col-sm-4">
+              <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(
+                <%= image_path("#{info.house}") %>)">
+                <p class="card-title"><%= info.title %></p>
+                <%= image_tag "#{info.image}", alt: "avatar de claudy", class: "avatar card-avatar" %>
+                <div class="card-description">
+                  <p ><%= info.description_title %></p>
+                  <p><%= info.description %></p>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-4">
-            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/arrive.png')">
-              <p class="card-title">Belgique</p>
-              <%= image_tag "benoit.jpg", alt: "avatar de Benoît", class: "avatar card-avatar" %>
-              <div class="card-description">
-                <p >Benoît's Home</p>
-                <p>Charming street to rest (in peace)</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-4">
-            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/cabane.jpg')">
-              <p class="card-title">Middle of Nowhere</p>
-              <%= image_tag "pierre.jpg", alt: "avatar de Pierre", class: "avatar card-avatar" %>
-              <div class="card-description">
-                <p >Pierre's Home</p>
-                <p>Charming wooden house</p>
-              </div>
-            </div>
-          </div>
+            <% end %>
 
         </div>
       </div>

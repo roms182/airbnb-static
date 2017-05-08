@@ -1,4 +1,18 @@
-- name: Some product
-  image: some_product.png
-- name: Other product
-  image: other_product.png
+claudy:
+  title: "Belgique"
+  house: "images/doel.jpg"
+  image: "francois.jpg"
+  description_title: "Claudy Focan's Home"
+  description: "Nice house with nice guy"
+benoit:
+  title: "Belgique"
+  house: "images/arrive.png"
+  image: "benoit.jpg"
+  description_title: "Benoît's Home"
+  description: "Nice place to rest (in peace)"
+pierre:
+  title: "Middle of NoWhere.."
+  house: "images/cabane.jpg"
+  image: "pierre.jpg"
+  description_title: "Pierre's Wooden Home"
+  description: "Natural and bio-organic place to leave in"
