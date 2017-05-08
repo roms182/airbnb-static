@@ -2,9 +2,293 @@
 title: Le Wagon Middleman boilerplate
 ---
 
-<div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
-</div>
+<!-- Your banner code -->
+    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/zonefriche.jpg');">
+      <div class="banner-content">
+        <h1>WELCOME HOME</h1>
+        <p>Find the perfect place to experiment unforgetable moments!</p>
+        <a class="btn btn-primary btn-lg">Start here</a>
+      </div>
+    </div>
+
+
+    <!-- Your features code -->
+    <div class="container text-center padded features">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <img class="img-responsive center-block" src="images/globe.png" alt="image de globe terrestre"/>
+          <h2>Discover the world</h2>
+          <p>The earth is your new home.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <img class="img-responsive center-block" src="images/dollar.png" alt="image de dollar"/>
+          <h2>Pay online</h2>
+          <p>No cash issues anymore.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <img class="img-responsive center-block" src="images/beer.png" alt="image de verre de bière"/>
+          <h2>Meet people</h2>
+          <p>Discover new culture and lifestyle.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+          <img class="img-responsive center-block" src="images/heart.png" alt="image de coeur"/>
+          <h2>Share and love</h2>
+          <p>Join a community you will love.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Your Cards code -->
+
+    <div class="wrapper-grey padded">
+      <h2 class="cards text-center">Your next trip</h2>
+      <div class="container cards">
+        <div class="row">
+
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/doel.jpg')">
+              <p class="card-title">Belgique</p>
+              <img class="avatar card-avatar" src="images/francois.jpg" alt="avatar de Claudy"/>
+              <div class="card-description">
+                <p >Claudy Focan's Home</p>
+                <p>Charming room with nice guy</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/arrive.png')">
+              <p class="card-title">Belgique</p>
+              <img class="avatar card-avatar" src="images/benoit.jpg" alt="avatar de Benoit"/>
+              <div class="card-description">
+                <p >Benoît's Home</p>
+                <p>Charming street to rest (in peace)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/cabane.jpg')">
+              <p class="card-title">Middle of Nowhere</p>
+              <img class="avatar card-avatar" src="images/pierre.jpg" alt="avatar de Pierre"/>
+              <div class="card-description">
+                <p >Pierre's Home</p>
+                <p>Charming wooden house</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Your newsletter code -->
+
+    <div id="newsletter" class="text-center padded">
+      <h2>Get news from us</h2>
+      <p>Leave us your mail and get news from us</p>
+
+      <form class="form-inline">
+        <div class="form-group">
+          <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+        </div>
+        <button type="submit" class="btn btn-primary">Suscribe</button>
+      </form>
+    </div>
+
+    <div id="map" style="width: 100%; height: 400px;"></div>
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+      <script type="text/javascript">
+        var myLatlng = new google.maps.LatLng(48.8655909, 2.378983);
+
+        var myOptions = {
+          zoom: 16,
+          center: myLatlng,
+          scrollwheel: false,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          styles: [{
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#e9e9e9"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f5f5f5"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 29
+            },
+            {
+                "weight": 0.2
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 18
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f5f5f5"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#dedede"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "saturation": 36
+            },
+            {
+                "color": "#333333"
+            },
+            {
+                "lightness": 40
+            }
+        ]
+    },
+    {
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f2f2f2"
+            },
+            {
+                "lightness": 19
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#fefefe"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#fefefe"
+            },
+            {
+                "lightness": 17
+            },
+            {
+                "weight": 1.2
+            }
+        ]
+    }] // TODO: replace [] by array from https://snazzymaps.com/
+        };
+
+        var map = new google.maps.Map(document.getElementById('map'), myOptions);
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: "You are here!"
+        });
+      </script>

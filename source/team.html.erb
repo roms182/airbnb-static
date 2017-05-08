@@ -1,0 +1,17 @@
+<div class="teammates container center-block text-center">
+<h2 class="text-center"> Our Team </h2>
+  <div class="row">
+    <% ["francois", "benoit", "pierre"].each do |member| %>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+        <div class="teammate">
+        <p><%= member.capitalize %></p>
+        <%= image_tag "#{member}.jpg", alt: "avatar de #{member}", class: "img-rounded avatar-xlarge" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="teammates-contact text-center">
+    <%= link_to "contact@airbnb.com", "index.html" %>
+    </div>
+</div>
